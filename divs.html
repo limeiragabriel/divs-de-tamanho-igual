@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Divs com mesma altura</title>
+	<style type="text/css">
+	
+		.container{
+			justify-content: center; /*centraliza na pagina*/
+			
+			/* -----importante------ */
+			width: 100%;             /*container da largura da pagina para centralizar corretamente*/
+			display: flex;           /*flexbox*/
+			flex-wrap: wrap;         /*quebra de linha*/
+		}
+		.block{
+			width: 400px;                             /*largura do bloco*/
+			max-width: 90vw;                          /*largura maxima de 90% da tela para disposotovos menores*/
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);  /*sombra*/
+			padding: 20px;                            /*espacamento*/
+			margin: 20px;                             /*espacamento*/
+
+			/* -----importante------ */
+			display: inline-flex;                     /*flexbox*/
+			flex-direction: column;                   /*os itens dentro da flexbox ficam na vertical*/
+		}
+
+	</style>
+</head>
+<body>
+	
+<h2 align="center">
+	DIVS COM MESMA ALTURA.
+</h2>
+
+<div class="container">
+	
+
+	<div class="block">
+		<b>texto pequeno</b>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum aliquam erat nec finibus. Vivamus quis quam volutpat, malesuada est vel, vestibulum neque. Sed vel mollis metus. Nulla facilisi.
+		</p>
+
+	</div>
+	<div class="block">
+		<b>texto maior</b>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla elementum aliquam erat nec finibus. Vivamus quis quam volutpat, malesuada est vel, vestibulum neque. Sed vel mollis metus. Nulla facilisi. Maecenas porta ante quis ultricies tempus. Ut ut urna malesuada, scelerisque purus vitae, fringilla magna. Morbi nec elit turpis. Sed cursus porttitor diam id convallis. Sed dignissim orci vulputate arcu auctor, eget porta turpis efficitur. Fusce tempor tellus in porta aliquam.
+		</p>
+	</div>
+
+
+
+</div>
+
+
+</body>
+</html>
